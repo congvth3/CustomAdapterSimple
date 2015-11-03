@@ -46,7 +46,7 @@ public class CustomListAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.list_row, null);
         TextView textView = (TextView)convertView.findViewById(R.id.number);
             Number n = numberItems.get(position);
-            textView.setText(n.getNumber());
+            textView.setText(String.valueOf(n.getNumber()));
             return convertView;
 
     }

@@ -35,7 +35,10 @@ public class MainActivity extends Activity {
         listView.setAdapter(adapter);
         for (int i = 1; i < 5; i++)
         {
-            NumberList.add();
+            int so1 = i;
+            Number number = new Number();
+            number.setNumber(so1);
+            NumberList.add(number);
         }
 
         //pDialog = new ProgressDialog(this);
