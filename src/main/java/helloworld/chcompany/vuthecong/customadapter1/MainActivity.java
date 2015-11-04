@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
         listView = (ListView)findViewById(R.id.list);
         adapter = new CustomListAdapter(this, NumberList);
         listView.setAdapter(adapter);
-        for (int i = 1; i < 5; i++)
+        for (int i = 1; i <= 100; i++)
         {
             int so1 = i;
             Number number = new Number();

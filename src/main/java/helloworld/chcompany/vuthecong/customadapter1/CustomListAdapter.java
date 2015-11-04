@@ -44,9 +44,15 @@ public class CustomListAdapter extends BaseAdapter {
             inflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
             convertView = inflater.inflate(R.layout.list_row, null);
-        TextView textView = (TextView)convertView.findViewById(R.id.number);
+        TextView textViewchan = (TextView)convertView.findViewById(R.id.number_chan);
             Number n = numberItems.get(position);
-            textView.setText(String.valueOf(n.getNumber()));
+        if (n.getNumber()%2 == 0) {
+            textViewchan.setText(String.valueOf(n.getNumber()));
+        }
+        else {
+            TextView textViewle = (TextView)convertView.findViewById(R.id.number_le);
+            textViewle.setText(String.valueOf(n.getNumber()));
+        }
             return convertView;
 
     }

@@ -3,9 +3,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
     <TextView
-        android:id="@+id/number"
+        android:id="@+id/number_chan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text = ""/>
+        android:text = ""
+        android:textColor="#FF0000"/>
+    <TextView
+        android:id="@+id/number_le"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=""
+        android:textColor="#0033CC"/>
 </RelativeLayout>
